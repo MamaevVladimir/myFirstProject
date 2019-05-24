@@ -37,7 +37,8 @@ public class FractionNumberImpl implements FractionNumber {
     @Override
     public double value() {
         return dividend / (double) divisor;
-    }
+    } // преобразование числителя или
+    // знаменателя к double для получения числа с остатком (изначально оба int поэтому дают только целые числа)
 
     @Override
     public void printToConsole() {

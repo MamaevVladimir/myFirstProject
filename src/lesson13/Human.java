@@ -5,8 +5,4 @@ public class Human {
         System.out.println("Человек идёт");
     }
 
-
-
-
-
 }

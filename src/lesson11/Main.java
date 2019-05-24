@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
 
         //ZooAnimal animal = new ZooAnimal();// если класс указан как abstract,
-        // то его объект создать нельзя
+        // то его объект создать нельзя (класс ZooAnimal абстрактный)
 
         Zoo zoo = new Zoo(100000);// можно было вызвать пустой конструктор либо
         // конструктор с входящим параметром
@@ -12,7 +12,7 @@ public class Main {
         //Zoo zoo1 = new Zoo(100000);
         //zoo1.buyAnimal();
 
-        Tiger tiger = new Tiger(20000, 250);
+        Tiger tiger = new Tiger(20000, 250);// одной строкой т.к. в Tiger есть конструктор
         //tiger.setCost(2000);
 
         Popugay popugay1 = new Popugay(40000, 8);

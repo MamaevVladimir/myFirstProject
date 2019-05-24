@@ -45,7 +45,7 @@ public class Treugolnic extends Figura {
 
     @Override
     public void printPloschad() {
-        System.out.println("Площадь треугольника: " + (a*b*c));
+        System.out.println("Площадь треугольника: " + (a * b * c));
     }
 
 }

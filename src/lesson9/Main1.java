@@ -2,8 +2,11 @@ package lesson9;
 
 public class Main1 {
     public static void main(String[] args) {
-        Cat bengal = new Cat();
-        Cat toyger = new Cat();
+        Cat bengal = new Cat();// конструктор - особый метод, вызываемый после New
+        // создающий новый объект, в который можно передать несколько параметров
+        Cat toyger = new Cat();// в круглых скобках можно прописать данные (короткая запись конструктора
+
+        // если меняется параметр в конструкторе, пишем toyger.setParametr и указываем новый параметр
 
         bengal.setAge(8);
         bengal.setPoroda("From India");

@@ -30,11 +30,11 @@ public class Pramougilnik extends Figura {
 
     @Override
     public void printPloschad() {
-        System.out.println("Площадь прямоугольника: " + (a*b));
+        System.out.println("Площадь прямоугольника: " + (a * b));
     }
 
     @Override
     public void printPerimeter() {
-        System.out.println("Периметр прямоугольника: " + (2*(a + b)));
+        System.out.println("Периметр прямоугольника: " + (2 * (a + b)));
     }
 }

@@ -1,6 +1,8 @@
 package lesson12;
 
-public class MeizuM5 implements Phone, Photoapparat {
+public class MeizuM5 implements Phone, Photoapparat {// implements т.е. следует шаблону
+    // Наследование только одному классу, следование шаблонам их количеством не ограничено.
+    // Также не ограничено количество классов, которые можно создать по данным шаблонам
     @Override
     public void call() {
         System.out.println("MeizuM5 осуществление звонка...");

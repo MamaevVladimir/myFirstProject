@@ -58,6 +58,6 @@ public interface FractionNumber {
 	 */
 	String toString();
 
-	void printToConsole();
+	void printToConsole();// этот метод дописан нами (изначально его в интерфейсе не было)
 }
 

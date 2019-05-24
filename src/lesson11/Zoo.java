@@ -29,13 +29,14 @@ public class Zoo {
         }
 
         for (int i = 0; i < animals.length; i++) {
-            if (animals[i] == null) {// null это пустая ячейка. Проверка есть ли свободная ячейка
+            if (animals[i] == null) {// null это первая свободная ячейка. Проверка есть ли свободная ячейка
                 money = money - animal.getCost();
                 animals[i] = animal;
-                return;
+                return;// чтобы в остальные свободные ячейки не заполнять то же самое животное
+                // остановка цикла for
             }
         }
-        System.out.println("Нет свободных клеток");
+        System.out.println("Нет свободных клеток");// если нет свободных ячеек
 
     }
 
