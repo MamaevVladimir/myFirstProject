@@ -1,5 +1,7 @@
 package lesson13;
 
+import lesson14.IMatrix;
+
 public class IMatrixImpl implements IMatrix {
 
    private int rows;
