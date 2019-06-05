@@ -21,5 +21,8 @@ public class Main4 {
         CollectionUtils utils = new CollectionUtilsImpl();
         Collection<Integer> resultUnion = utils.union(a,b);
         System.out.println(resultUnion);
+
+        Collection<Integer> resultIntersection = utils.intersection(a,b);
+        System.out.println(resultIntersection);
     }
 }

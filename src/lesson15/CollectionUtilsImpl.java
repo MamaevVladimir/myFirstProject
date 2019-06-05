@@ -23,7 +23,12 @@ public class CollectionUtilsImpl implements CollectionUtils {
 
     @Override
     public Collection<Integer> intersection(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-        return null;
+        ArrayList<Integer> result = new ArrayList<>();
+
+
+
+
+        return result;
     }
 
     @Override
