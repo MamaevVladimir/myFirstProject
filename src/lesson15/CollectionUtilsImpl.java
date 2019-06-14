@@ -23,12 +23,33 @@ public class CollectionUtilsImpl implements CollectionUtils {
 
     @Override
     public Collection<Integer> intersection(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-        ArrayList<Integer> result = new ArrayList<>();
+      ArrayList<Integer> result1 = new ArrayList<>();
+        for (Integer number : a) {
+            for (Integer number1 : b) {
+                for (int i = 0; i<result1.size();i++){
+                    for (int j =0; j<result1.size(); j++){
+                        if (result1.get(i) == result1.get(j)){
+                            result1.add(number, number1);
+                        }
+                    }
+                }
+
+        }
 
 
+        }
 
+      /*   ArrayList<Integer> number = new ArrayList<>();
 
-        return result;
+        for (int i = 0; i < number.size(); i++){
+
+            for (int j = 0; j < number.size(); j++){
+                if (number.get(i) == number.get(j)){
+                    result1.add(number.get(i),number.get(j));
+                }
+            }
+        }*/
+        return result1;
     }
 
     @Override
