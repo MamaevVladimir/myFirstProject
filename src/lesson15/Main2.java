@@ -19,19 +19,19 @@ public class Main2 {
 
         // первый способ прохода по коллекции - for each
 
-        for(Integer n : numbers){
+        for (Integer n : numbers) {
             System.out.println(n);
         }
         System.out.println("-------------");
 
         // второй способ с помощью обычного цикла for, который генерирует индексы
-        for(int i = 0; i < numbers.size(); i++){// numbers.size: длина коллекции
+        for (int i = 0; i < numbers.size(); i++) {// numbers.size: длина коллекции
             System.out.println(numbers.get(i));// текущий элемент коллекции
         }
         System.out.println("-------------");
 
         // третий способ прохода c помощью итератора
-        for(Iterator <Integer> iter = numbers.iterator();iter.hasNext() ;){// итератор. Например, напрямую из коллекции (мешок) брать нельзя,
+        for (Iterator<Integer> iter = numbers.iterator(); iter.hasNext(); ) {// итератор. Например, напрямую из коллекции (мешок) брать нельзя,
             // можно с помощью щипцов (итератор). Итератор находится внутри коллекции,
             // достаём его в первом блоке в круглых скобках. Дальше крутим цикл пока есть
             // следующий элемент (метод hasNext). Третий блок пустой, поскольку пока итератор крутит цикл,

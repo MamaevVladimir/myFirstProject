@@ -2,6 +2,7 @@ package lesson15;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
 import java.util.Set;
 
 public class CollectionUtilsImpl implements CollectionUtils {
@@ -23,47 +24,69 @@ public class CollectionUtilsImpl implements CollectionUtils {
 
     @Override
     public Collection<Integer> intersection(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-      ArrayList<Integer> result1 = new ArrayList<>();
+        ArrayList<Integer> result = new ArrayList<>();// поскольку используют дубликаты
         for (Integer number : a) {
-            for (Integer number1 : b) {
-                for (int i = 0; i<result1.size();i++){
-                    for (int j =0; j<result1.size(); j++){
-                        if (result1.get(i) == result1.get(j)){
-                            result1.add(number, number1);
-                        }
-                    }
-                }
-
-        }
-
-
-        }
-
-      /*   ArrayList<Integer> number = new ArrayList<>();
-
-        for (int i = 0; i < number.size(); i++){
-
-            for (int j = 0; j < number.size(); j++){
-                if (number.get(i) == number.get(j)){
-                    result1.add(number.get(i),number.get(j));
-                }
+            if (b.contains(number)) {
+                result.add(number);
             }
-        }*/
-        return result1;
-    }
+        }
+        for (Integer number : b) {
+            if (a.contains(number)) {
+                result.add(number);
+            }
+            return result;
+        }
 
-    @Override
-    public Set<Integer> unionWithoutDuplicate(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-        return null;
-    }
+        //@Override
+       // public Set<Integer> unionWithoutDuplicate (Collection < Integer > a, Collection < Integer > b) throws
+       // NullPointerException {
+         //   HashSet<Integer> result = new HashSet<>();
+            for (Integer number : a) {
+                result.add(number);
+            }
+            for (Integer number : b) {
+                result.add(number);
+            }
+            return result;
+        }
 
-    @Override
-    public Set<Integer> intersectionWithoutDuplicate(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-        return null;
-    }
+        @Override
+        public Set<Integer> intersectionWithoutDuplicate (Collection < Integer > a, Collection < Integer > b) throws
+        NullPointerException {
+            HashSet<Integer> result = new HashSet<>();
+            result.addAll(a);
+            result.addAll(b);
+            return result;
+        }
 
-    @Override
-    public Collection<Integer> difference(Collection<Integer> a, Collection<Integer> b) throws NullPointerException {
-        return null;
+        //@Override
+        //public Collection<Integer> difference (Collection < Integer > a, Collection < Integer > b) throws
+        //NullPointerException {
+            ArrayList<Integer> result = new ArrayList<>();
+           // for (Integer number : a) {
+              //  if (!(b.contains(number))) {
+                //    result.add(number);
+           //     }
+          //  }
+          //  for (Integer number : b) {
+           //     if (!(a.contains(number))) {
+           //         result.add(number);
+           //     }
+         //   }
+         //   return result;
+      //  }
+
+
+        @Override
+        public Set<Integer> unionWithoutDuplicate (Collection < Integer > a, Collection < Integer > b) throws
+        NullPointerException {
+            return null;
+        }
+
+
+        @Override
+        public Collection<Integer> difference (Collection < Integer > a, Collection < Integer > b) throws
+        NullPointerException {
+            return null;
+        }
     }
-}
