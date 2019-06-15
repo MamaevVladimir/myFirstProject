@@ -17,5 +17,7 @@ public class Main1 {
         tournir.printToConsoleRate();
 
         tournir.sredniyBall();
+
+        tournir.sortRating();
     }
 }

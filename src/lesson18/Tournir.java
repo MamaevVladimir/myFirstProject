@@ -2,6 +2,7 @@ package lesson18;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Tournir {
     private HashMap<String, Integer> table = new HashMap<>();
@@ -57,7 +58,15 @@ public class Tournir {
             summaZnachenii += table.get(key);
         }
         double sredneeZnachenie = (double) summaZnachenii / table.size();
-        System.out.println(sredneeZnachenie);
+        System.out.println("Средний рейтинг команд " + sredneeZnachenie);
+    }
+
+    public void sortRating() {
+        ValueComparator bvc = new ValueComparator(table);
+        TreeMap<String, Integer> sorted_map = new TreeMap<String, Integer>(bvc);
+        System.out.println("Неотсортированный рейтинг команд: " + table);
+        sorted_map.putAll(table);
+        System.out.println("Отсортированный рейтинг команд: " + sorted_map);
     }
 }
 
