@@ -29,6 +29,12 @@ public class Matrix implements IMatrix {
 
     @Override
     public double getValueAt(int rowIndex, int colIndex) throws IndexOutOfBoundsException {
+        if(rowIndex >= this.getRows()){
+            throw new IndexOutOfBoundsException("Индекс строки превышает количество строк");
+        }
+        if(colIndex >= this.getColumns()){
+            throw new IndexOutOfBoundsException("Индекс колонки превышает количество колонок");
+        }
         return numbers[rowIndex][colIndex];// возвращаем двухмерный массив
     }
 

@@ -2,7 +2,7 @@ package lesson9;
 
 public class Main1 {
     public static void main(String[] args) {
-        Cat bengal = new Cat();// конструктор - особый метод, вызываемый после New
+        Cat bengal = new Cat();// конструктор - особый метод, вызываемый после FileCopy
         // создающий новый объект, в который можно передать несколько параметров
         Cat toyger = new Cat();// в круглых скобках можно прописать данные (короткая запись конструктора
 
