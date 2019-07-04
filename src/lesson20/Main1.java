@@ -13,7 +13,7 @@ public class Main1 {
         // иметь имени, но тело относится к этому классу. Этот класс реализует интерфейс FileFilter,
         // внутри класса будет создан объект
         // Как бы создаём объект интерфейса FileFilter
-        File[] allFiles = src.listFiles(new FileFilter() {// ожидаются файлы allFiles,
+        File[] allFiles = src.listFiles( new FileFilter() {// ожидаются файлы allFiles,
             // проходящие через данный фильтр
             @Override
             public boolean accept(File pathname) {// метод accept принимает File pathname
@@ -21,9 +21,7 @@ public class Main1 {
                 if (pathname.isFile()) {// ищем папки, потому фильтр на отсеивание файлов
                     return false;
                 }
-                if (pathname.getName().startsWith("lesson")) {
-                    return true;
-                }
+
                 if (pathname.getName().indexOf("1") != -1) {
                     return true;
                 }
