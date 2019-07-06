@@ -1,7 +1,5 @@
 package lesson23;
 
-import lesson20.FileCopyUtils1;
-
 public class Main {
     public static void main(String[] args) {
         CopyFileTaskImpl task1 = new CopyFileTaskImpl("C:\\Users\\1\\Favorites\\Downloads\\Видео курсов\\Видео JAVA\\Занятие 3, 14-04-2019, курс Java - 4, EasyUM.mp4", "C:\\Users\\1\\Favorites\\Downloads\\Видео курсов\\Видео JAVA-1\\Занятие 3, 14-04-2019, курс Java - 4, EasyUM COPY.mp4");
@@ -11,12 +9,12 @@ public class Main {
         CopyFileTaskImpl task5 = new CopyFileTaskImpl("C:\\Users\\1\\Favorites\\Downloads\\Видео курсов\\Видео JAVA\\Занятие 8, 29-04-2019, курс Java - 4, EasyUM.mp4", "C:\\Users\\1\\Favorites\\Downloads\\Видео курсов\\Видео JAVA-1\\Занятие 8, 29-04-2019, курс Java - 4, EasyUM COPY.mp4");
         CopyFileTaskImpl task6 = new CopyFileTaskImpl("C:\\Users\\1\\Favorites\\Downloads\\Видео курсов\\Видео JAVA\\Занятие 9, 06-05-2019, курс Java-4, EasyUM.mp4", "C:\\Users\\1\\Favorites\\Downloads\\Видео курсов\\Видео JAVA-1\\Занятие 9, 06-05-2019, курс Java-4, EasyUM COPY.mp4");
 
-        //task1.setFileCopyUtils((new FileCopyWithJava7());
-        //task2.setFileCopyUtils(new FileCopyWithJava7());
-        //task3.setFileCopyUtils(new FileCopyWithChannel());
-        //task4.setFileCopyUtils((lesson20.FileCopyUtils) new FileCopyWithChannel());
-        //task5.setFileCopyUtils((lesson20.FileCopyUtils) new FileCopyWithChannel());
-        //task6.setFileCopyUtils((lesson20.FileCopyUtils) new FileCopyWithJava7());
+        task1.setFileCopyUtils(new FileCopyWithChannel());
+        task2.setFileCopyUtils(new FileCopyWithChannel());
+        task3.setFileCopyUtils(new FileCopyWithChannel());
+        task4.setFileCopyUtils(new FileCopyWithChannel());
+        task5.setFileCopyUtils(new FileCopyWithChannel());
+        task6.setFileCopyUtils(new FileCopyWithChannel());
 
         TasksStorageImpl storage = new TasksStorageImpl();
         storage.add(task1);

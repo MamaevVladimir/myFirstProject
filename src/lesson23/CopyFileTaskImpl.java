@@ -15,9 +15,9 @@ public class CopyFileTaskImpl extends AbstractTask implements CopyFileTask {
         this.to = to;
     }
 
-    @Override
-    public void setFileCopyUtils(FileCopyWithChannel copyUtils) {
-        //this.copyUtils = copyUtils;
+
+    public void setFileCopyUtils(FileCopyUtils copyUtils) {
+        this.copyUtils = copyUtils;
     }
 
     @Override
@@ -38,6 +38,11 @@ public class CopyFileTaskImpl extends AbstractTask implements CopyFileTask {
                 ", from='" + from + '\'' +
                 ", to='" + to + '\'' +
                 '}';
+    }
+
+    @Override
+    public void setFileCopyUtils(FileCopyWithChannel copyUtils) {
+
     }
 }
 
