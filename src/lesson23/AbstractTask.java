@@ -13,6 +13,4 @@ public abstract class AbstractTask implements Task {
     public void incTryCount() {
         tryCount++;
     }
-
-
 }

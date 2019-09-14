@@ -1,0 +1,47 @@
+html {
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+    }
+
+h2 {
+    text-align: center;
+}
+
+.positions.and.places {
+    color: darkblue;
+}
+
+.business {
+    font-size: 19px;
+    color: green;
+}
+
+.pathology {
+    font-size: 19px;
+    color: chartreuse;
+}
+
+.medicine.forensic {
+    font-size: 19px;
+    color: chartreuse;
+}
+
+.jurisprudence {
+    font-size: 19px;
+    color: darkgreen;
+}
+
+.spisok {
+    text-align: center;
+}
+
+.realization2 {
+    font-size: 20px;
+}
+
+.realization3 {
+    font-size: 21px;
+}

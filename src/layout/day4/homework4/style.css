@@ -1,0 +1,80 @@
+@font-face {
+    font-family: "Deutsch Gothic";
+    src: url("../fonts/Deutsch Gothic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-BlackItalic";
+    src: url("../fonts/Roboto-BlackItalic.ttf");
+}
+
+body {
+    font-family: "Deutsch Gothic", sans-serif;
+    font-size: 30px;
+    background-image: url("https://sribnotravel.info/wp-content/uploads/2018/12/Dikaya-priroda-Avstralii-4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    text-align: center;
+}
+
+.australia-america {
+    font-family: "Roboto-BlackItalic", sans-serif;
+}
+
+.animals {
+    font-family: "Roboto-BlackItalic", sans-serif;
+}
+
+.text-bold {
+    font-weight: 900;
+}
+
+.invite {
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: red;
+}
+
+.allinclusive {
+    font-family: "Roboto-BlackItalic";
+    color: green;
+}
+
+h1 {
+    letter-spacing: 10px;
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-shadow: 5px 5px 5px darkorange;
+}
+
+p {
+    border: 2px solid red;
+    margin: 0 20px;
+    text-indent: 50px;
+    word-wrap: break-word;
+    text-align: justify;
+    text-transform: capitalize;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.croco {
+    width: 500px;
+    height: 500px;
+    background: red url("http://scharks.ru/reptilia/3-grebnist/grebn.jpg") no-repeat center/cover;
+}
+
+.snake {
+    width: 500px;
+    height: 500px;
+    background: red url("https://versiya.info/uploads/posts/2018-09/1536312831_zm.jpg") no-repeat right/cover;
+    text-align: right;
+}

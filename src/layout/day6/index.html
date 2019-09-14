@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<form action="http://echo.htmlacademy.ru" method="post" target="_blank">
+
+    <fieldset>
+        <legend>Учётные данные</legend>
+        <label for="login">Логин</label>
+        <input type="text" id="login" name="login" placeholder="Введите логин" required>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" minlength="5" maxlength="12" required
+               placeholder="Введите пароль">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Введите e-mail">
+        <input type="file">
+        <input type="search">
+        <input type="date">
+        <input type="color">
+        <input type="number">
+        <input type="range">
+    </fieldset>
+
+    <fieldset>
+        <legend>Цвета</legend>
+        <label for="green">Зелёный</label>
+        <input type="checkbox" id="green" name="color" value="green">
+        <label for="red">Красный</label>
+        <input type="checkbox" id="red" name="color" value="red">
+        <label for="blue">Синий</label>
+        <input type="checkbox" id="blue" name="color" value="blue">
+    </fieldset>
+
+    <fieldset>
+        <legend>Радиостанция</legend>
+        <label for="bbc">BBC</label>
+        <input type="radio" name="radio station" value="1" id="bbc">
+        <label for="rock">Рок</label>
+        <input type="radio" name="radio station" value="2" id="rock">
+        <label for="ultra">Ультра</label>
+        <input type="radio" name="radio station" value="3" id="ultra">
+    </fieldset>
+
+    <fieldset>
+        <legend>Инструменты</legend>
+        <select name="instruments" multiple>
+            <optgroup label="Для сепарации">
+                <option value="1">Скальпель</option>
+                <option value="2">Нож секционный</option>
+                <option value="3">Ланцет</option>
+            </optgroup>
+            <optgroup label="Костные">
+                <option value="4">Пила листовая</option>
+                <option value="5">Долото</option>
+                <option value="6">Дрель</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <field>
+        <legend>Комментарии</legend>
+        <textarea name="comment" id="" cols="30" rows="10"></textarea>
+    </field>
+
+    <input type="submit">
+    <input type="reset">
+    <input type="hidden" name="cost" value="100">
+    <button>Button</button>
+</form>
+
+</body>
+</html>

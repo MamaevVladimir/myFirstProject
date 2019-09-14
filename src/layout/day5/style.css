@@ -1,0 +1,92 @@
+body {
+    font-size: 30px;
+}
+
+/*.unordered-list {*/
+/*    list-style-image: url("https://i.ytimg.com/vi/lkQ0LDx9jHs/maxresdefault.jpg");*/
+
+
+/*}*/
+
+table {
+    /*width: 600px;*/
+    margin: 20px auto 50px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    text-align: center;
+}
+
+td input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+}
+
+.cell-no-padding {
+    padding: 0;
+}
+
+.cell-top {
+    vertical-align: top;
+}
+
+.cell-bottom {
+    vertical-align: bottom;
+}
+
+.table {
+    display: table;
+    margin: 20px auto 50px;
+    border-collapse: collapse;
+}
+
+.table-caption {
+    display: table-caption;
+    text-align: center;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    border: 1px solid black;
+    padding: 10px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.menu {
+    margin: 100px auto 100px;
+    display: table;
+    border-collapse: collapse;
+}
+
+.menu-item {
+    display: table-cell;
+    border: 1px solid black;
+    vertical-align: middle;
+}
+
+.big {
+    font-size: 60px;
+    padding: 20px;
+}
